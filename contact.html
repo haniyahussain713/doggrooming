@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Lucy's Dog Grooming and Day Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Include header -->
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data);
+  </script>
+  <section>
+    <p><strong>Address:</strong> 1234 Dogwood Lane, Houston, TX 77008</p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> info@lucysdogspa.com</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
+  </footer>
+</body>
+</html>

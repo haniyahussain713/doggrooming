@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials - Lucy's Dog Grooming and Day Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Include header -->
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data);
+  </script> 
+  <section>
+    <blockquote>
+      <p>"Lucy and her team are amazing! My dog always comes back looking great!"</p>
+    </blockquote>
+  </section>
+  <footer>
+    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
+  </footer>
+</body>
+</html>

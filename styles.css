@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background: #a748c4;
+    color: rgb(237, 213, 212);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  nav {
+    background: #37082a;
+    color: rgb(178, 169, 169);
+    padding: 1rem;
+    text-align: center;
+  }
+  nav a {
+    color: rgb(255, 253, 253);
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    padding: 2rem;
+  }
+  footer {
+    background: #360333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  .cta-button {
+    background: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

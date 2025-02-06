@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Lucy's Dog Grooming and Day Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Include header -->
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data);
+  </script>
+  <section>
+    <h2>Our Story</h2>
+    <p>Lucy’s Dog Grooming and Day Spa was founded in 2015 by Lucy Muddypaw, a passionate dog lover with years of experience in pet grooming...</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
