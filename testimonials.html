@@ -13,14 +13,44 @@
     fetch('header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header-container').innerHTML = data);
-  </script> 
-  <section>
-    <blockquote>
-      <p>"Lucy and her team are amazing! My dog always comes back looking great!"</p>
-    </blockquote>
-  </section>
-  <footer>
-    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+  </script>
+  
+  <main>
+    <section class="page-header">
+      <h2>Customer Testimonials</h2>
+      <p>Don't just take our word for it. Here's what our happy customers and their pets have to say!</p>
+    </section>
+    
+
+    <section class="review-submission">
+      <h3>Share Your Experience</h3>
+      <p>We'd love to hear about your experience with Lucy's Dog Grooming and Day Spa! Please submit your testimonial using the form below or leave us a review on our Google Business or Yelp pages.</p>
+      
+      <form class="testimonial-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="dog-name">Your Dog's Name</label>
+          <input type="text" id="dog-name" name="dog-name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="testimonial">Your Testimonial</label>
+          <textarea id="testimonial" name="testimonial" rows="5" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="rating">Rating (1-5 stars)</label>
+          <select id="rating" name="rating" required>
+            <option value="5">5 Stars - Excellent</option>
+            <option value="4">4 Stars - Very Good</option>
+            <option value="3">3 Stars - Good</option>
+            <option value="2">2 Stars - Fair</option>
+            <option value="1">1 Star - Poor</option>
+          </select>
+        </div>
+        
+        <div class="form-

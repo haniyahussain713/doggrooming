@@ -7,22 +7,218 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <!-- Include header -->
+  <!-- Include header -->
   <div id="header-container"></div>
   <script>
     fetch('header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header-container').innerHTML = data);
   </script>
-  <section>
-    <h2>Grooming Packages</h2>
-    <ul>
-      <li>Signature Groom - Includes shampoo, blow dry, nail trim...</li>
-      <li>Puppy Pamper - Bath, brush, and cologne...</li>
-    </ul>
-  </section>
+  
+  <main>
+    <section class="page-header">
+      <h2>Our Services</h2>
+      <p>Pricing for all services depends on the size of the dog and the condition of its coat and nails.</p>
+    </section>
+
+    <section class="service-category">
+      <h3>Grooming Packages</h3>
+      <p>We've created special packages that offer combinations of services at a reduced fee. Pricing for all services depends on the size of the dog and the condition of its coat and nails.</p>
+      
+      <div class="service-grid">
+        <div class="service-card">
+          <h4>Signature Groom (The Works)</h4>
+          <p>Our most comprehensive grooming package includes:</p>
+          <ul>
+            <li>Shampoo & Conditioner</li>
+            <li>Blow Dry</li>
+            <li>Standard Brush</li>
+            <li>Nail Trim</li>
+            <li>Ear Cleaning</li>
+            <li>Haircut & Styling</li>
+            <li>Cologne/Perfume</li>
+            <li>Bandana/Bow(s)</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Puppy Pamper</h4>
+          <p>A gentle introduction to grooming for puppies includes:</p>
+          <ul>
+            <li>Shampoo & Conditioner</li>
+            <li>Hand Blow Dry</li>
+            <li>Standard Brush</li>
+            <li>Nail Trim</li>
+            <li>Ear Cleaning</li>
+            <li>Face Tidy</li>
+            <li>Paw Pads</li>
+            <li>Trimming around the paws</li>
+            <li>Sanitary Trim</li>
+            <li>Cologne/Perfume</li>
+            <li>Bandana or Bow(s)</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Mini Spaw (Sanitary Trim)</h4>
+          <p>Quick touch-up with no length off the body:</p>
+          <ul>
+            <li>Sanitary Trim</li>
+            <li>Face Trim</li>
+            <li>Paw Pad Trim</li>
+            <li>Nail Trim</li>
+            <li>Ear Cleaning</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Senior Retreat (10 years or older)</h4>
+          <p>Special care for our senior friends includes:</p>
+          <ul>
+            <li>Extra Fee added to any package</li>
+            <li>Extra Time / Special Handling</li>
+            <li>Arthritis Care</li>
+            <li>Adjustments for Vision/Hearing/Medical Issues</li>
+            <li>Extra Comforts throughout the day</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Shed-Control Bath</h4>
+          <ul>
+            <li>Deshed Shampoo & Conditioner</li>
+            <li>Force Air Dry the Coat to Blow out the Coat</li>
+            <li>Use Tools and Brushing to finish the process</li>
+            <li>Brush Out and Carding (Dematting not included)</li>
+            <li>Cologne/Perfume</li>
+            <li>Bandana/Bow(s)</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Double Coated & Long-Haired Shed Control Bath</h4>
+          <p>For thick coated dogs such as Huskies, Samoyeds, Japanese Spitz & Bernese Mountain Dogs, etc.</p>
+          <ul>
+            <li>Includes Shed-Control Bath</li>
+            <li>Extra Time and Attention to ensure their coats are fully dry and tangle free</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Double Coated & Long-Haired Shed Control Bath & Tidy Combo</h4>
+          <ul>
+            <li>Includes Double Coated Long-Haired Shed Control Bath</li>
+            <li>Foot and Pad Trim</li>
+            <li>Hygiene & bum clip</li>
+            <li>Tidy on the pants, feathering & tail</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Glow Up Scissor Groom</h4>
+          <ul>
+            <li>Includes Signature Groom</li>
+            <li>A bit more styling</li>
+            <li>Special Grooming Requests (Teddy Cuts, Asian Fusion, Traditional Breed Cut, Scissor Grooms)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-category">
+      <h3>À La Carte Services</h3>
+      <p>Individual services that can be added to any package:</p>
+      
+      <div class="service-grid">
+        <div class="service-card">
+          <h4>Basic Grooming</h4>
+          <ul>
+            <li>Nail Trim</li>
+            <li>Ear Cleaning</li>
+            <li>Gland Expression</li>
+            <li>Teeth Brushing with Foam and Spray</li>
+            <li>Bath and Blow Dry</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Special Treatments</h4>
+          <ul>
+            <li>Flea and Tick Treatment</li>
+            <li>Medicated Shampoo</li>
+            <li>Oatmeal Bath</li>
+            <li>Hair Volumizing Treatment</li>
+            <li>Leave In Conditioner</li>
+            <li>CBD Oil</li>
+            <li>De-matting (Extra handling fee for heavily matted dogs)</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h4>Additional Services</h4>
+          <ul>
+            <li>Hand Stripping -- "Rolled" option</li>
+            <li>Hand Stripping -- "Blown" option</li>
+            <li>Face or Sanitary tidy</li>
+            <li>Poodle Feet</li>
+            <li>Nail Grinding</li>
+            <li>Ear Pluck</li>
+            <li>Dog Safe Hair Dye (Pink, Red, Green, Blue, Orange, Yellow, Purple, Black, Grey, Brown)</li>
+            <li>Extra Handling</li>
+            <li>Paw Pad & Nose Balm</li>
+            <li>Wrinkle Balm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-category">
+      <h3>Walk-In Services</h3>
+      <p>Available without appointment (subject to capacity):</p>
+      <ul>
+        <li>Dog Nail Clipping</li>
+        <li>Anal Gland Expression</li>
+        <li>Ear cleaning/plucking</li>
+        <li>Oral treatment</li>
+        <li>Sanitary Clip</li>
+      </ul>
+    </section>
+
+    <section class="additional-fees">
+      <h3>Special Handling Fees</h3>
+      <ul>
+        <li>Heavily matted handling fee</li>
+        <li>Aggression fee - $25</li>
+        <li>Sedated fee - $25</li>
+        <li>Late pick up fee - $25</li>
+        <li>Less than 24-hour cancellation fee (50% of scheduled service)</li>
+      </ul>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p><strong>Address:</strong> 1234 Dogwood Lane, Houston, TX 77008</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@lucysdogspa.com</p>
+      </div>
+      <div class="hours">
+        <h4>Business Hours</h4>
+        <p><strong>Drop-off:</strong> Between 7 am and 9 am</p>
+        <p><strong>Pickup:</strong> Before 6 pm</p>
+      </div>
+      <div class="social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
   </footer>
 </body>
 </html>

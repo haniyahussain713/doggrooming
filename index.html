@@ -1,4 +1,5 @@
-html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,90 @@ html lang="en">
       .then(response => response.text())
       .then(data => document.getElementById('header-container').innerHTML = data);
   </script>
-  <section>
-    <h2>Welcome to Lucy's Dog Grooming and Day Spa</h2>
-    <p>Your dog’s happiness and safety are our top priorities. Book an appointment today!</p>
-    <a href="contact.html" class="cta-button">Book Now</a>
-  </section>
+  
+  <main>
+    <section class="hero">
+      <h2>Welcome to Lucy's Dog Grooming and Day Spa</h2>
+      <p>Your dog's happiness and safety are our top priorities. We offer professional grooming services in the Heights area of Houston since September 2015.</p>
+      <a href="contact.html" class="cta-button">Book Now</a>
+    </section>
+
+    <section class="features">
+      <h3>Why Choose Us?</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>Certified Groomers</h4>
+          <p>Lucy and Amanda are certified to provide all services offered by our business, ensuring your pet receives professional care.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Personalized Service</h4>
+          <p>We take a personal interest in our customers and their dogs, tailoring our grooming approach to suit each pet's unique needs.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Before & After Photos</h4>
+          <p>We take pictures of every dog before and after grooming so you can see the amazing transformation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages">
+      <h3>Featured Grooming Packages</h3>
+      <div class="package-grid">
+        <div class="package-card">
+          <h4>Signature Groom</h4>
+          <p>Our comprehensive package includes shampoo, blow dry, nail trim, and more for a complete grooming experience.</p>
+          <a href="services.html" class="secondary-button">Learn More</a>
+        </div>
+        <div class="package-card">
+          <h4>Puppy Pamper</h4>
+          <p>A gentle introduction to grooming for your young pup, including a bath, brush, and light cologne.</p>
+          <a href="services.html" class="secondary-button">Learn More</a>
+        </div>
+        <div class="package-card">
+          <h4>Senior Retreat</h4>
+          <p>Special care for dogs 10 years or older, with adjustments for vision, hearing, and medical issues.</p>
+          <a href="services.html" class="secondary-button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3>What Our Customers Say</h3>
+      <blockquote>
+        <p>"Lucy and her team are amazing! My dog always comes back looking great and seems so happy after his grooming sessions!"</p>
+        <cite>— Sarah K., Heights</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The care and attention to detail is outstanding. My nervous rescue now enjoys her grooming visits thanks to Lucy's patience."</p>
+        <cite>— Michael T., Houston</cite>
+      </blockquote>
+      <a href="testimonials.html" class="text-link">Read More Testimonials</a>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p><strong>Address:</strong> 1234 Dogwood Lane, Houston, TX 77008</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@lucysdogspa.com</p>
+      </div>
+      <div class="hours">
+        <h4>Business Hours</h4>
+        <p><strong>Drop-off:</strong> Between 7 am and 9 am</p>
+        <p><strong>Pickup:</strong> Before 6 pm</p>
+      </div>
+      <div class="social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Lucy's Dog Grooming and Day Spa. All rights reserved.</p>
   </footer>
 </body>
 </html>
